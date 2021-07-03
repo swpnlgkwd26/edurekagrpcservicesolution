@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace = "Edurekha.GrpcClient"; 
+package account;
+
+service Account {
+
+  rpc GetAccounts (EmptyModel) returns (stream AccountModel);  
+  rpc AddAccount (AccountModel) returns (EmptyModel);
+  rpc DeleteAccount (AccountNumberModel) returns (EmptyModel);
+  rpc UpdateAccount (AccountModel) returns (EmptyModel);
+}
+message EmptyModel { 
+}
+message AccountModel {
+  int32  customerId = 1;
+  int32 accountNumber=2;
+  string accountHolderName=3;
+  string address=4;
+  string mobileNumber=5;
+  double balance=6;
+  string typeofAccount=7;
+}
+message AccountNumberModel{
+	int32 accountNumber=1;
+}

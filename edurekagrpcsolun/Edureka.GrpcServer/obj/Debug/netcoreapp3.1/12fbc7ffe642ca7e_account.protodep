@@ -1,0 +1,2 @@
+obj\Debug\netcoreapp3.1/Account.cs \
+obj\Debug\netcoreapp3.1/AccountGrpc.cs: Protos/account.proto

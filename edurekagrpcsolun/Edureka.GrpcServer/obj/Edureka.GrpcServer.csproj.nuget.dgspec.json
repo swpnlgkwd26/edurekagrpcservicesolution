@@ -48,6 +48,14 @@
             "Grpc.AspNetCore": {
               "target": "Package",
               "version": "[2.27.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.12, )"
             }
           },
           "imports": [
